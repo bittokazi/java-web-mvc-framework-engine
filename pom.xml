@@ -7,6 +7,7 @@
   <packaging>jar</packaging>
 
   <name>java-web-mvc-framework-engine</name>
+  <description>Java Simple Web MVC Framework Engine</description>
   <url>https://github.com/bittokazi/java-web-mvc-framework-engine</url>
 
 	<organization>
