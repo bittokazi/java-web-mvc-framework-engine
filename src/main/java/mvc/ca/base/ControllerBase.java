@@ -70,7 +70,7 @@ public class ControllerBase {
 		for(RoutingClass routingClass: this.routingClassList) {
 			found = true;
 			Map<String, String> routeParams = new HashMap<>();
-			System.out.println("Rounte Check ["+url+"]["+routingClass.getURL()+"]");
+			System.out.println("Rounte Check ["+url+"]["+(request.getContextPath().equals("/")? routingClass.getURL().split("/") : (request.getContextPath()+routingClass.getURL()))+"]");
 			String urlTomatch[]  = request.getContextPath().equals("/")? routingClass.getURL().split("/") : (request.getContextPath()+routingClass.getURL()).split("/");
 			String currentUrl[]  = request.getRequestURI().split("/");
 			Integer voteCount = currentUrl.length;
