@@ -3,7 +3,7 @@
 
   <groupId>com.github.bittokazi</groupId>
   <artifactId>com.github.bittokazi</artifactId>
-  <version>1.0.02</version>
+  <version>1.0.03-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>java-web-mvc-framework-engine</name>
@@ -37,7 +37,7 @@
 		<connection>scm:git:git://github.com/bittokazi/java-web-mvc-framework-engine.git</connection>
 		<developerConnection>scm:git:git@github.com/bittokazi/java-web-mvc-framework-engine.git</developerConnection>
 		<url>https://github.com/bittokazi/java-web-mvc-framework-engine</url>
-		<tag>com.github.bittokazi-1.0.02</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
