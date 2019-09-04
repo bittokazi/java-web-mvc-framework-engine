@@ -71,7 +71,7 @@ public class ControllerBase {
 			found = true;
 			Map<String, String> routeParams = new HashMap<>();
 			System.out.println("Rounte Check ["+url+"]["+routingClass.getURL()+"]");
-			String urlTomatch[]  = routingClass.getURL().split("/");
+			String urlTomatch[]  = request.getContextPath().equals("/")? routingClass.getURL().split("/") : (request.getContextPath()+routingClass.getURL()).split("/");
 			String currentUrl[]  = request.getRequestURI().split("/");
 			Integer voteCount = currentUrl.length;
 			for(int i = 0; i<urlTomatch.length; i++) {
